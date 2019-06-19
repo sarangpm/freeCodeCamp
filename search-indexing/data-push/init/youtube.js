@@ -5,7 +5,7 @@ const { getYoutubeData } = require('../../data-sources/youtube');
 const log = debug('fcc:search:init:youtube');
 
 const index = client.initIndex('youtube');
-
+console.log(index)
 index.setSettings(
   {
     searchableAttributes: ['title', 'description', 'playlistTitle'],

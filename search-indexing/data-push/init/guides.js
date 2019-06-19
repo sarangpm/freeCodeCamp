@@ -8,7 +8,7 @@ const debug = require('debug');
 const log = debug('fcc:search:init:guides');
 
 const index = client.initIndex('guide');
-
+console.log(index)
 index.setSettings(
   {
     searchableAttributes: ['title', 'content', 'category'],
